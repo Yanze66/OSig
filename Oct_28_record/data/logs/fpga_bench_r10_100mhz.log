@@ -1,0 +1,122 @@
+Server started
+PARAMETERS: v1_4_hpu_879_ks32_tuniform_2m128
+RUN_DIR: /home/yzwu/.codex/visualizations/2026/09/25/01a0da75-f764-71d3-9aa4-62eb17f163fd/vck190_tcp_adder/osig_hpu/step3_osig_fpga/runs/bench_r10
+Starting server with G=25, Q=10, R=10, V=4
+2026-10-27 00:33:39.395171209 -04:00 | generate_receivers | Generating 10 receivers
+2026-10-27 00:33:39.399859268 -04:00 | generate_receivers | generating recipient aaaa
+2026-10-27 00:33:39.399912613 -04:00 | generate_receivers | generating recipient aaaf
+2026-10-27 00:33:39.399909404 -04:00 | generate_receivers | generating recipient aaac
+2026-10-27 00:33:39.399932928 -04:00 | generate_receivers | generating recipient aaab
+2026-10-27 00:33:39.400001354 -04:00 | generate_receivers | generating recipient aaad
+2026-10-27 00:33:39.400039222 -04:00 | generate_receivers | generating recipient aaae
+2026-10-27 00:33:39.400103763 -04:00 | generate_receivers | generating recipient aaaj
+2026-10-27 00:33:39.400048998 -04:00 | generate_receivers | generating recipient aaag
+2026-10-27 00:33:39.399984372 -04:00 | generate_receivers | generating recipient aaah
+2026-10-27 00:33:39.400075066 -04:00 | generate_receivers | generating recipient aaai
+2026-10-27 00:33:39.715204339 -04:00 | generate_receivers | recipient aaaj generated
+2026-10-27 00:33:39.727301953 -04:00 | generate_receivers | recipient aaaa generated
+2026-10-27 00:33:39.731320788 -04:00 | generate_receivers | recipient aaae generated
+2026-10-27 00:33:39.743763162 -04:00 | generate_receivers | recipient aaac generated
+2026-10-27 00:33:39.750493036 -04:00 | generate_receivers | recipient aaab generated
+2026-10-27 00:33:39.755420745 -04:00 | generate_receivers | recipient aaai generated
+2026-10-27 00:33:39.762863460 -04:00 | generate_receivers | recipient aaad generated
+2026-10-27 00:33:39.767343480 -04:00 | generate_receivers | recipient aaaf generated
+2026-10-27 00:33:39.778929348 -04:00 | generate_receivers | recipient aaag generated
+2026-10-27 00:33:39.781529332 -04:00 | generate_receivers | recipient aaah generated
+2026-10-27 00:33:39.781598614 -04:00 | generate_receivers | Recipient Wallets have been created.
+FPGA key slot 0 <- recipient aaaa (built images)
+FPGA key slot 1 <- recipient aaab (built images)
+FPGA key slot 2 <- recipient aaac (built images)
+FPGA key slot 3 <- recipient aaad (built images)
+FPGA key slot 4 <- recipient aaae (built images)
+FPGA key slot 5 <- recipient aaaf (built images)
+FPGA key slot 6 <- recipient aaag (built images)
+FPGA key slot 7 <- recipient aaah (built images)
+FPGA key slot 8 <- recipient aaai (built images)
+FPGA key slot 9 <- recipient aaaj (built images)
+FPGA_KEYS_READY recipients=10 image_build_s=1.245 upload_s=15.270 (outside the Alg4 benchmark)
+2026-10-27 00:33:56.332882518 -04:00 | SERVER: gen_inbox | generating inbox for aaac
+2026-10-27 00:33:56.332877903 -04:00 | SERVER: gen_inbox | generating inbox for aaaf
+2026-10-27 00:33:56.332892300 -04:00 | SERVER: gen_inbox | generating inbox for aaag
+2026-10-27 00:33:56.332898117 -04:00 | SERVER: gen_inbox | generating inbox for aaai
+2026-10-27 00:33:56.332884436 -04:00 | SERVER: gen_inbox | generating inbox for aaab
+2026-10-27 00:33:56.332888133 -04:00 | SERVER: gen_inbox | generating inbox for aaah
+2026-10-27 00:33:56.332877615 -04:00 | SERVER: gen_inbox | generating inbox for aaaa
+2026-10-27 00:33:56.332990438 -04:00 | SERVER: gen_inbox | generating inbox for aaaj
+2026-10-27 00:33:56.332998261 -04:00 | SERVER: gen_inbox | generating inbox for aaae
+2026-10-27 00:33:56.332994999 -04:00 | SERVER: gen_inbox | generating inbox for aaad
+2026-10-27 00:33:56.975004310 -04:00 | generate_message_request_batches | Generating 4 messages for 10 recipients
+Batch 0: 10 messages
+Batch 1: 10 messages
+Batch 2: 10 messages
+Batch 3: 10 messages
+2026-10-27 00:34:23.726780573 -04:00 | RECEIVER_aaab: read_inbox | decrypted inbox [[0, 1], [1, 2], [2, 3], [3, 0]]
+2026-10-27 00:34:23.726790673 -04:00 | RECEIVER_aaaf: read_inbox | decrypted inbox [[0, 1], [1, 2], [2, 3], [3, 0]]
+2026-10-27 00:34:23.726806693 -04:00 | RECEIVER_aaai: read_inbox | decrypted inbox [[0, 1], [1, 2], [2, 3], [3, 0]]
+2026-10-27 00:34:23.726795571 -04:00 | RECEIVER_aaac: read_inbox | decrypted inbox [[0, 1], [1, 2], [2, 3], [3, 0]]
+2026-10-27 00:34:23.726797730 -04:00 | RECEIVER_aaag: read_inbox | decrypted inbox [[0, 1], [1, 2], [2, 3], [3, 0]]
+2026-10-27 00:34:23.726800100 -04:00 | RECEIVER_aaaj: read_inbox | decrypted inbox [[0, 1], [1, 2], [2, 3], [3, 0]]
+2026-10-27 00:34:23.726781869 -04:00 | RECEIVER_aaae: read_inbox | decrypted inbox [[0, 1], [1, 2], [2, 3], [3, 0]]
+2026-10-27 00:34:23.726828691 -04:00 | RECEIVER_aaad: read_inbox | decrypted inbox [[0, 1], [1, 2], [2, 3], [3, 0]]
+2026-10-27 00:34:23.726818638 -04:00 | RECEIVER_aaah: read_inbox | decrypted inbox [[0, 1], [1, 2], [2, 3], [3, 0]]
+2026-10-27 00:34:23.726838879 -04:00 | RECEIVER_aaaa: read_inbox | decrypted inbox [[0, 1], [1, 2], [2, 3], [3, 0]]
+
+================ OSig Algorithm 1-5 profile ================
+All times in seconds. Recipients = 10; Rayon threads = 32
+Workload pipeline wall time: 44.387995 s (excludes compilation, final reports and object-size benchmark)
+wall_s = elapsed real time; worker_s = sum of timed recipient tasks (includes waits, NOT CPU time)
+worker_s/recipient = worker_s / recipient count, averaged over the ENTIRE workload, NOT per message
+Alg1/2 scope is all recipients. Alg3/4/5 scope is each shard; shards may overlap, so do not sum wall times across shards.
+
+Algorithm / step                         wall_s         worker_s   worker_s/recipient
+Alg1 KeyGen/load                       0.386433         3.512603             0.351260
+Alg2 InboxGen                          0.049597         0.437278             0.043728
+Alg1 cache: loaded=30 built=0 key objects; actual build worker_s=0.000000; build worker_s/recipient=0.000000
+Alg1 uses fixed ParamsGen constants; no runtime parameter search. Alg2 includes key clones, cached trivial ciphertexts and slot allocation.
+
+Shard keI: 10 recipients, 40 messages, 4 batches
+SERVER PROCESSING (Alg4) actual wall time: 26.751329 s
+Algorithm / step                         wall_s         worker_s   worker_s/recipient
+Alg3 SignalGen/load                    0.000402         0.000920             0.000092
+Alg4 Server processing                26.751329       234.101781            23.410178
+Alg4.1 Rectification                        N/A        83.952674             8.395267
+Alg4.2 Pertinency check                     N/A       114.779513            11.477951
+Alg4.3 Filter and accumulate                N/A        15.321352             1.532135
+Alg4.4 Inbox update                         N/A        18.148060             1.814806
+Alg4 four-step subtotal                     N/A       232.201599            23.220160
+Alg4 other recipient work                   N/A         1.900183             0.190018
+Alg5 ReadInbox                         0.000469         0.000193             0.000019
+Alg3 cache: loaded=40 built=0 messages; actual encryption worker_s=0.000000; encryption worker_s/recipient=0.000000
+Alg4 expansion wall_s=0.001325 (included in server wall, outside recipient worker timers)
+N/A: step wall times are not measured separately because workers interleave steps concurrently.
+Alg4 worker total includes per-recipient inbox/batch clones and steps; excludes expansion and outer collection/writeback.
+Alg5 worker time measures decryption; its wall time also includes scheduling and debug output.
+============================================================
+
+ALGORITHM_CSV,scope,algorithm,wall_seconds,worker_seconds,worker_seconds_per_recipient,recipients
+ALGORITHM_CSV,all,Alg1 KeyGen/load,0.386433313,3.512602640,0.351260264,10
+ALGORITHM_CSV,all,Alg2 InboxGen,0.049596626,0.437277851,0.043727785,10
+ALGORITHM_CSV,keI,Alg3 SignalGen/load,0.000402147,0.000920406,0.000092041,10
+ALGORITHM_CSV,keI,Alg4 Server processing,26.751328662,234.101781431,23.410178143,10
+ALGORITHM_CSV,keI,Alg4.1 Rectification,,83.952673880,8.395267388,10
+ALGORITHM_CSV,keI,Alg4.2 Pertinency check,,114.779513230,11.477951323,10
+ALGORITHM_CSV,keI,Alg4.3 Filter and accumulate,,15.321351710,1.532135171,10
+ALGORITHM_CSV,keI,Alg4.4 Inbox update,,18.148059852,1.814805985,10
+ALGORITHM_CSV,keI,Alg4 four-step subtotal,,232.201598672,23.220159867,10
+ALGORITHM_CSV,keI,Alg4 other recipient work,,1.900182759,0.190018276,10
+ALGORITHM_CSV,keI,Alg5 ReadInbox,0.000468633,0.000193267,0.000019327,10
+
+OSig processing profile (seconds; summed worker elapsed time, NOT wall time)
+PROFILE_CSV,shard,stage,worker_seconds,stage_percent,ms_per_message_recipient,message_recipient_pairs,batch_recipient_pairs
+PROFILE_CONTEXT,shard=keI,server_wall_seconds=26.751329,expansion_wall_seconds=0.001325,rayon_threads=32
+PROFILE_CSV,keI,rectification,83.952673880,36.155,209.881685,400,40
+PROFILE_CSV,keI,pertinency_check,114.779513230,49.431,286.948783,400,40
+PROFILE_CSV,keI,filter_accumulate,15.321351710,6.598,38.303379,400,40
+PROFILE_CSV,keI,inbox_update,18.148059852,7.816,45.370150,400,40
+PBS COUNT 1280
+FPGA_STATS requests=920 ciphertexts=14400 pbs_cycles=2010855273 mean_pbs_cycles_per_ct=139642 wire_us=207341346 mean_wire_us_per_ct=14398.7
+Object Size Report
+Variable 'receiver pk' total usage: 32876 bytes
+Variable 'receiver server_key' total usage: 115306156 bytes
+Variable 'receiver sk' total usage: 20084 bytes
+Variable 'sender ciphertext' total usage: 16608 bytes

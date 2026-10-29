@@ -1,0 +1,17 @@
+case 0: hw_cycles=1291595 round_trip_us=6741
+case 1: hw_cycles=1335033 round_trip_us=6944
+case 2: hw_cycles=1281630 round_trip_us=6677
+case 3: hw_cycles=1307319 round_trip_us=6805
+case 4: hw_cycles=1299959 round_trip_us=6767
+case 5: hw_cycles=1314357 round_trip_us=6840
+case 6: hw_cycles=1314739 round_trip_us=6841
+case 7: hw_cycles=1314609 round_trip_us=6840
+case 8: hw_cycles=1314379 round_trip_us=6844
+case 9: hw_cycles=1309234 round_trip_us=6812
+case 10: hw_cycles=1320599 round_trip_us=6871
+case 11: hw_cycles=1334652 round_trip_us=6940
+case 12: hw_cycles=1312555 round_trip_us=6830
+case 13: hw_cycles=1312745 round_trip_us=6832
+case 14: hw_cycles=1334750 round_trip_us=6941
+case 15: hw_cycles=1312769 round_trip_us=6830
+RUN_TESTVEC_DONE cases=16

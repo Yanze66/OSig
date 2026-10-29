@@ -1,0 +1,162 @@
+[
+  {
+    "a": 0,
+    "b": 0,
+    "case": "bwand_0",
+    "expected_plain": 0,
+    "gid": 7,
+    "input_file": "bwand_in_0.bin",
+    "lut": "BwAnd",
+    "raw_value": 0
+  },
+  {
+    "a": 0,
+    "b": 1,
+    "case": "bwand_1",
+    "expected_plain": 0,
+    "gid": 7,
+    "input_file": "bwand_in_1.bin",
+    "lut": "BwAnd",
+    "raw_value": 1
+  },
+  {
+    "a": 0,
+    "b": 2,
+    "case": "bwand_2",
+    "expected_plain": 0,
+    "gid": 7,
+    "input_file": "bwand_in_2.bin",
+    "lut": "BwAnd",
+    "raw_value": 2
+  },
+  {
+    "a": 0,
+    "b": 3,
+    "case": "bwand_3",
+    "expected_plain": 0,
+    "gid": 7,
+    "input_file": "bwand_in_3.bin",
+    "lut": "BwAnd",
+    "raw_value": 3
+  },
+  {
+    "a": 1,
+    "b": 0,
+    "case": "bwand_4",
+    "expected_plain": 0,
+    "gid": 7,
+    "input_file": "bwand_in_4.bin",
+    "lut": "BwAnd",
+    "raw_value": 4
+  },
+  {
+    "a": 1,
+    "b": 1,
+    "case": "bwand_5",
+    "expected_plain": 1,
+    "gid": 7,
+    "input_file": "bwand_in_5.bin",
+    "lut": "BwAnd",
+    "raw_value": 5
+  },
+  {
+    "a": 1,
+    "b": 2,
+    "case": "bwand_6",
+    "expected_plain": 0,
+    "gid": 7,
+    "input_file": "bwand_in_6.bin",
+    "lut": "BwAnd",
+    "raw_value": 6
+  },
+  {
+    "a": 1,
+    "b": 3,
+    "case": "bwand_7",
+    "expected_plain": 1,
+    "gid": 7,
+    "input_file": "bwand_in_7.bin",
+    "lut": "BwAnd",
+    "raw_value": 7
+  },
+  {
+    "a": 2,
+    "b": 0,
+    "case": "bwand_8",
+    "expected_plain": 0,
+    "gid": 7,
+    "input_file": "bwand_in_8.bin",
+    "lut": "BwAnd",
+    "raw_value": 8
+  },
+  {
+    "a": 2,
+    "b": 1,
+    "case": "bwand_9",
+    "expected_plain": 0,
+    "gid": 7,
+    "input_file": "bwand_in_9.bin",
+    "lut": "BwAnd",
+    "raw_value": 9
+  },
+  {
+    "a": 2,
+    "b": 2,
+    "case": "bwand_10",
+    "expected_plain": 2,
+    "gid": 7,
+    "input_file": "bwand_in_10.bin",
+    "lut": "BwAnd",
+    "raw_value": 10
+  },
+  {
+    "a": 2,
+    "b": 3,
+    "case": "bwand_11",
+    "expected_plain": 2,
+    "gid": 7,
+    "input_file": "bwand_in_11.bin",
+    "lut": "BwAnd",
+    "raw_value": 11
+  },
+  {
+    "a": 3,
+    "b": 0,
+    "case": "bwand_12",
+    "expected_plain": 0,
+    "gid": 7,
+    "input_file": "bwand_in_12.bin",
+    "lut": "BwAnd",
+    "raw_value": 12
+  },
+  {
+    "a": 3,
+    "b": 1,
+    "case": "bwand_13",
+    "expected_plain": 1,
+    "gid": 7,
+    "input_file": "bwand_in_13.bin",
+    "lut": "BwAnd",
+    "raw_value": 13
+  },
+  {
+    "a": 3,
+    "b": 2,
+    "case": "bwand_14",
+    "expected_plain": 2,
+    "gid": 7,
+    "input_file": "bwand_in_14.bin",
+    "lut": "BwAnd",
+    "raw_value": 14
+  },
+  {
+    "a": 3,
+    "b": 3,
+    "case": "bwand_15",
+    "expected_plain": 3,
+    "gid": 7,
+    "input_file": "bwand_in_15.bin",
+    "lut": "BwAnd",
+    "raw_value": 15
+  }
+]

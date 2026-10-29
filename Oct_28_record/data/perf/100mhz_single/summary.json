@@ -1,0 +1,91 @@
+{
+  "msgonly": {
+    "hw_cycles": {
+      "n": 30,
+      "min": 786508,
+      "median": 789104.5,
+      "mean": 789296.0,
+      "max": 791659
+    },
+    "hw_ms": {
+      "n": 30,
+      "min": 7.86508,
+      "median": 7.891045,
+      "mean": 7.9,
+      "max": 7.91659
+    },
+    "round_trip_ms": {
+      "n": 30,
+      "min": 8.152,
+      "median": 8.229,
+      "mean": 8.2,
+      "max": 8.27
+    },
+    "overhead_ms": {
+      "n": 30,
+      "min": 0.26530000000000076,
+      "median": 0.33631999999999973,
+      "mean": 0.3,
+      "max": 0.37716000000000083
+    }
+  },
+  "bwand": {
+    "hw_cycles": {
+      "n": 48,
+      "min": 787356,
+      "median": 789297.0,
+      "mean": 789430.8,
+      "max": 791469
+    },
+    "hw_ms": {
+      "n": 48,
+      "min": 7.87356,
+      "median": 7.89297,
+      "mean": 7.9,
+      "max": 7.91469
+    },
+    "round_trip_ms": {
+      "n": 48,
+      "min": 8.152,
+      "median": 8.2225,
+      "mean": 8.2,
+      "max": 8.266
+    },
+    "overhead_ms": {
+      "n": 48,
+      "min": 0.2649500000000007,
+      "median": 0.33569999999999967,
+      "mean": 0.3,
+      "max": 0.37535000000000096
+    }
+  },
+  "ping_us": {
+    "n": 5,
+    "min": 0,
+    "median": 0,
+    "mean": 0,
+    "max": 0
+  },
+  "sim_cycles": 565645,
+  "clock_mhz": 100,
+  "cpu": {
+    "bwand_ms": {
+      "max_ms": 15.284179,
+      "mean_ms": 15.027965279999997,
+      "median_ms": 15.005292,
+      "min_ms": 14.865088,
+      "n": 50
+    },
+    "cpu_model": "Intel(R) Core(TM) i9-14900K",
+    "logical_cpus": 32,
+    "msgonly_ms": {
+      "max_ms": 17.074254,
+      "mean_ms": 15.561207459999999,
+      "median_ms": 15.060694,
+      "min_ms": 14.825282,
+      "n": 50
+    },
+    "single_ciphertext_single_thread": true,
+    "tfhe_version": "1.8.1 (shortint KS32, x86 FFT backend)"
+  }
+}

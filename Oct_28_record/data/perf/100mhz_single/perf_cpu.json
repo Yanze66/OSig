@@ -1,0 +1,21 @@
+{
+  "bwand_ms": {
+    "max_ms": 15.284179,
+    "mean_ms": 15.027965279999997,
+    "median_ms": 15.005292,
+    "min_ms": 14.865088,
+    "n": 50
+  },
+  "cpu_model": "Intel(R) Core(TM) i9-14900K",
+  "logical_cpus": 32,
+  "msgonly_ms": {
+    "max_ms": 17.074254,
+    "mean_ms": 15.561207459999999,
+    "median_ms": 15.060694,
+    "min_ms": 14.825282,
+    "n": 50
+  },
+  "single_ciphertext_single_thread": true,
+  "tfhe_version": "1.8.1 (shortint KS32, x86 FFT backend)"
+}
+BENCH_CPU_DONE

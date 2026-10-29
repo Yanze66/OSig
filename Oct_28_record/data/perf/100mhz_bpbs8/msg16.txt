@@ -1,0 +1,6 @@
+rep 0 batch 0: n=16 pbs_cycles=1813128 per_ct_cycles=113320 server_us=19022 round_trip_us=26833 per_ct_us=1677.1
+rep 1 batch 0: n=16 pbs_cycles=1807506 per_ct_cycles=112969 server_us=18961 round_trip_us=26661 per_ct_us=1666.3
+rep 2 batch 0: n=16 pbs_cycles=1807072 per_ct_cycles=112942 server_us=18957 round_trip_us=26660 per_ct_us=1666.2
+rep 3 batch 0: n=16 pbs_cycles=1813083 per_ct_cycles=113317 server_us=19016 round_trip_us=26576 per_ct_us=1661.0
+rep 4 batch 0: n=16 pbs_cycles=1806565 per_ct_cycles=112910 server_us=18950 round_trip_us=26331 per_ct_us=1645.7
+RUN_TESTVEC_BATCH_DONE cases=10 batches=5 ciphertexts=80 mean_per_ct_cycles=113091 mean_per_ct_us=1663.3

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root versionMajor="1" versionMinor="9">
+  <kernel name="hpu_mini_krnl" language="ip" vlnv="local.osig:hpu:hpu_mini_krnl:1.0" attributes="" preferredWorkGroupSizeMultiple="0" workGroupSize="1" hwControlProtocol="user_managed">
+    <ports>
+      <port name="m_axi_bsk0" mode="master" range="0xFFFFFFFFFFFFFFFF" dataWidth="256" portType="addressable" base="0x0"/>
+      <port name="m_axi_bsk1" mode="master" range="0xFFFFFFFFFFFFFFFF" dataWidth="256" portType="addressable" base="0x0"/>
+      <port name="m_axi_bsk2" mode="master" range="0xFFFFFFFFFFFFFFFF" dataWidth="256" portType="addressable" base="0x0"/>
+      <port name="m_axi_bsk3" mode="master" range="0xFFFFFFFFFFFFFFFF" dataWidth="256" portType="addressable" base="0x0"/>
+      <port name="m_axi_glwe" mode="master" range="0xFFFFFFFFFFFFFFFF" dataWidth="256" portType="addressable" base="0x0"/>
+      <port name="m_axi_ksk0" mode="master" range="0xFFFFFFFFFFFFFFFF" dataWidth="256" portType="addressable" base="0x0"/>
+      <port name="m_axi_ksk1" mode="master" range="0xFFFFFFFFFFFFFFFF" dataWidth="256" portType="addressable" base="0x0"/>
+      <port name="m_axi_ksk2" mode="master" range="0xFFFFFFFFFFFFFFFF" dataWidth="256" portType="addressable" base="0x0"/>
+      <port name="m_axi_ksk3" mode="master" range="0xFFFFFFFFFFFFFFFF" dataWidth="256" portType="addressable" base="0x0"/>
+      <port name="m_axi_pem" mode="master" range="0xFFFFFFFFFFFFFFFF" dataWidth="256" portType="addressable" base="0x0"/>
+      <port name="S_AXI_CONTROL" mode="slave" range="0x1000" dataWidth="32" portType="addressable" base="0x0"/>
+    </ports>
+    <args>
+      <arg name="ISSUED" addressQualifier="0" id="0" port="S_AXI_CONTROL" size="0x4" offset="0x10" hostOffset="0x0" hostSize="0x4" type="ap_uint&lt;32>"/>
+      <arg name="ACK_TOTAL" addressQualifier="0" id="1" port="S_AXI_CONTROL" size="0x4" offset="0x14" hostOffset="0x0" hostSize="0x4" type="ap_uint&lt;32>"/>
+      <arg name="DOP_PUSH" addressQualifier="0" id="2" port="S_AXI_CONTROL" size="0x4" offset="0x18" hostOffset="0x0" hostSize="0x4" type="ap_uint&lt;32>"/>
+      <arg name="ERROR" addressQualifier="0" id="3" port="S_AXI_CONTROL" size="0x4" offset="0x1c" hostOffset="0x0" hostSize="0x4" type="ap_uint&lt;32>"/>
+      <arg name="CT_ADDR_LO" addressQualifier="0" id="4" port="S_AXI_CONTROL" size="0x4" offset="0x20" hostOffset="0x0" hostSize="0x4" type="ap_uint&lt;32>"/>
+      <arg name="CT_ADDR_HI" addressQualifier="0" id="5" port="S_AXI_CONTROL" size="0x4" offset="0x24" hostOffset="0x0" hostSize="0x4" type="ap_uint&lt;32>"/>
+      <arg name="GLWE_ADDR_LO" addressQualifier="0" id="6" port="S_AXI_CONTROL" size="0x4" offset="0x30" hostOffset="0x0" hostSize="0x4" type="ap_uint&lt;32>"/>
+      <arg name="GLWE_ADDR_HI" addressQualifier="0" id="7" port="S_AXI_CONTROL" size="0x4" offset="0x34" hostOffset="0x0" hostSize="0x4" type="ap_uint&lt;32>"/>
+      <arg name="BPIP_CTRL" addressQualifier="0" id="8" port="S_AXI_CONTROL" size="0x4" offset="0x38" hostOffset="0x0" hostSize="0x4" type="ap_uint&lt;32>"/>
+      <arg name="BPIP_TIMEOUT" addressQualifier="0" id="9" port="S_AXI_CONTROL" size="0x4" offset="0x3c" hostOffset="0x0" hostSize="0x4" type="ap_uint&lt;32>"/>
+      <arg name="BSK0_ADDR_LO" addressQualifier="0" id="10" port="S_AXI_CONTROL" size="0x4" offset="0x40" hostOffset="0x0" hostSize="0x4" type="ap_uint&lt;32>"/>
+      <arg name="BSK0_ADDR_HI" addressQualifier="0" id="11" port="S_AXI_CONTROL" size="0x4" offset="0x44" hostOffset="0x0" hostSize="0x4" type="ap_uint&lt;32>"/>
+      <arg name="BSK1_ADDR_LO" addressQualifier="0" id="12" port="S_AXI_CONTROL" size="0x4" offset="0x48" hostOffset="0x0" hostSize="0x4" type="ap_uint&lt;32>"/>
+      <arg name="BSK1_ADDR_HI" addressQualifier="0" id="13" port="S_AXI_CONTROL" size="0x4" offset="0x4c" hostOffset="0x0" hostSize="0x4" type="ap_uint&lt;32>"/>
+      <arg name="BSK2_ADDR_LO" addressQualifier="0" id="14" port="S_AXI_CONTROL" size="0x4" offset="0x50" hostOffset="0x0" hostSize="0x4" type="ap_uint&lt;32>"/>
+      <arg name="BSK2_ADDR_HI" addressQualifier="0" id="15" port="S_AXI_CONTROL" size="0x4" offset="0x54" hostOffset="0x0" hostSize="0x4" type="ap_uint&lt;32>"/>
+      <arg name="BSK3_ADDR_LO" addressQualifier="0" id="16" port="S_AXI_CONTROL" size="0x4" offset="0x58" hostOffset="0x0" hostSize="0x4" type="ap_uint&lt;32>"/>
+      <arg name="BSK3_ADDR_HI" addressQualifier="0" id="17" port="S_AXI_CONTROL" size="0x4" offset="0x5c" hostOffset="0x0" hostSize="0x4" type="ap_uint&lt;32>"/>
+      <arg name="KSK0_ADDR_LO" addressQualifier="0" id="18" port="S_AXI_CONTROL" size="0x4" offset="0x60" hostOffset="0x0" hostSize="0x4" type="ap_uint&lt;32>"/>
+      <arg name="KSK0_ADDR_HI" addressQualifier="0" id="19" port="S_AXI_CONTROL" size="0x4" offset="0x64" hostOffset="0x0" hostSize="0x4" type="ap_uint&lt;32>"/>
+      <arg name="KSK1_ADDR_LO" addressQualifier="0" id="20" port="S_AXI_CONTROL" size="0x4" offset="0x68" hostOffset="0x0" hostSize="0x4" type="ap_uint&lt;32>"/>
+      <arg name="KSK1_ADDR_HI" addressQualifier="0" id="21" port="S_AXI_CONTROL" size="0x4" offset="0x6c" hostOffset="0x0" hostSize="0x4" type="ap_uint&lt;32>"/>
+      <arg name="KSK2_ADDR_LO" addressQualifier="0" id="22" port="S_AXI_CONTROL" size="0x4" offset="0x70" hostOffset="0x0" hostSize="0x4" type="ap_uint&lt;32>"/>
+      <arg name="KSK2_ADDR_HI" addressQualifier="0" id="23" port="S_AXI_CONTROL" size="0x4" offset="0x74" hostOffset="0x0" hostSize="0x4" type="ap_uint&lt;32>"/>
+      <arg name="KSK3_ADDR_LO" addressQualifier="0" id="24" port="S_AXI_CONTROL" size="0x4" offset="0x78" hostOffset="0x0" hostSize="0x4" type="ap_uint&lt;32>"/>
+      <arg name="KSK3_ADDR_HI" addressQualifier="0" id="25" port="S_AXI_CONTROL" size="0x4" offset="0x7c" hostOffset="0x0" hostSize="0x4" type="ap_uint&lt;32>"/>
+      <arg name="KEY_CTRL" addressQualifier="0" id="26" port="S_AXI_CONTROL" size="0x4" offset="0x80" hostOffset="0x0" hostSize="0x4" type="ap_uint&lt;32>"/>
+      <arg name="KEY_STATUS" addressQualifier="0" id="27" port="S_AXI_CONTROL" size="0x4" offset="0x84" hostOffset="0x0" hostSize="0x4" type="ap_uint&lt;32>"/>
+      <arg name="PEM_LD_ACK" addressQualifier="0" id="28" port="S_AXI_CONTROL" size="0x4" offset="0x90" hostOffset="0x0" hostSize="0x4" type="ap_uint&lt;32>"/>
+      <arg name="PEM_ST_ACK" addressQualifier="0" id="29" port="S_AXI_CONTROL" size="0x4" offset="0x94" hostOffset="0x0" hostSize="0x4" type="ap_uint&lt;32>"/>
+      <arg name="PEA_ACK" addressQualifier="0" id="30" port="S_AXI_CONTROL" size="0x4" offset="0x98" hostOffset="0x0" hostSize="0x4" type="ap_uint&lt;32>"/>
+      <arg name="PEP_ACK" addressQualifier="0" id="31" port="S_AXI_CONTROL" size="0x4" offset="0x9c" hostOffset="0x0" hostSize="0x4" type="ap_uint&lt;32>"/>
+      <arg name="LOCAL_ACK" addressQualifier="0" id="32" port="S_AXI_CONTROL" size="0x4" offset="0xa0" hostOffset="0x0" hostSize="0x4" type="ap_uint&lt;32>"/>
+      <arg name="LAST_PBS_CYCLES" addressQualifier="0" id="33" port="S_AXI_CONTROL" size="0x4" offset="0xa8" hostOffset="0x0" hostSize="0x4" type="ap_uint&lt;32>"/>
+      <arg name="CYCLE_LO" addressQualifier="0" id="34" port="S_AXI_CONTROL" size="0x4" offset="0xb0" hostOffset="0x0" hostSize="0x4" type="ap_uint&lt;32>"/>
+      <arg name="CYCLE_HI" addressQualifier="0" id="35" port="S_AXI_CONTROL" size="0x4" offset="0xb4" hostOffset="0x0" hostSize="0x4" type="ap_uint&lt;32>"/>
+      <arg name="ptr_pem" addressQualifier="1" id="36" port="m_axi_pem" size="0x8" offset="0x100" hostOffset="0x0" hostSize="0x8" type="int*"/>
+      <arg name="ptr_glwe" addressQualifier="1" id="37" port="m_axi_glwe" size="0x8" offset="0x108" hostOffset="0x0" hostSize="0x8" type="int*"/>
+      <arg name="ptr_bsk0" addressQualifier="1" id="38" port="m_axi_bsk0" size="0x8" offset="0x110" hostOffset="0x0" hostSize="0x8" type="int*"/>
+      <arg name="ptr_bsk1" addressQualifier="1" id="39" port="m_axi_bsk1" size="0x8" offset="0x118" hostOffset="0x0" hostSize="0x8" type="int*"/>
+      <arg name="ptr_bsk2" addressQualifier="1" id="40" port="m_axi_bsk2" size="0x8" offset="0x120" hostOffset="0x0" hostSize="0x8" type="int*"/>
+      <arg name="ptr_bsk3" addressQualifier="1" id="41" port="m_axi_bsk3" size="0x8" offset="0x128" hostOffset="0x0" hostSize="0x8" type="int*"/>
+      <arg name="ptr_ksk0" addressQualifier="1" id="42" port="m_axi_ksk0" size="0x8" offset="0x130" hostOffset="0x0" hostSize="0x8" type="int*"/>
+      <arg name="ptr_ksk1" addressQualifier="1" id="43" port="m_axi_ksk1" size="0x8" offset="0x138" hostOffset="0x0" hostSize="0x8" type="int*"/>
+      <arg name="ptr_ksk2" addressQualifier="1" id="44" port="m_axi_ksk2" size="0x8" offset="0x140" hostOffset="0x0" hostSize="0x8" type="int*"/>
+      <arg name="ptr_ksk3" addressQualifier="1" id="45" port="m_axi_ksk3" size="0x8" offset="0x148" hostOffset="0x0" hostSize="0x8" type="int*"/>
+    </args>
+  </kernel>
+</root>

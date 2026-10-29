@@ -1,0 +1,46 @@
+{
+  "config": "psi16_gf64_n5c5c1_bpbs8_tpbs16_pem1_glwe1_bsk4_ksk4",
+  "files": {
+    "bsk_pc0.bin": {
+      "bytes": 14401536,
+      "sha256": "013de86f5d68c45c3abce2263ebab59ec2eca8294ec36a00af19d9a4a5f4f292"
+    },
+    "bsk_pc1.bin": {
+      "bytes": 14401536,
+      "sha256": "8365707495678a368cb6f200a198bff1f79a0f332a71f4587f6a67a946edc754"
+    },
+    "bsk_pc2.bin": {
+      "bytes": 14401536,
+      "sha256": "729dbd5d570c8f518e6cd22a290f7d6a5c8f6b128dfee6b3b98318743d480b58"
+    },
+    "bsk_pc3.bin": {
+      "bytes": 14401536,
+      "sha256": "7974d4b051afc30ec4bc35d98b96205a17f50eecf014e30fbdfd75270e18612e"
+    },
+    "host_private/client_key.bin": {
+      "bytes": 20084,
+      "sha256": "c03c584a2875a0e43f81749c6aeaf600125a6365f4ff14b30e6fe6ca899e92ec"
+    },
+    "host_private/compressed_server_key.bin": {
+      "bytes": 28868860,
+      "sha256": "9d2bd11911c3387485c2ab8b4bff09adde30384ab2ee1be7c478f18afeb06b5a"
+    },
+    "ksk_pc0.bin": {
+      "bytes": 10813440,
+      "sha256": "2b1952e5507993ce0d8b78e079e6d5b28d3683d13ea42daea01286391d079a39"
+    },
+    "ksk_pc1.bin": {
+      "bytes": 10813440,
+      "sha256": "8c74b4dda0d4881d674135e203106c84fd0054147a0e0127f8ac723139237e2d"
+    },
+    "ksk_pc2.bin": {
+      "bytes": 10813440,
+      "sha256": "3fc9518ac349d9505bee730d1b1bb52705d6e9f7a7289c416c4dd3f095d0a690"
+    },
+    "ksk_pc3.bin": {
+      "bytes": 10813440,
+      "sha256": "b4a24fc198d9816f9568793c9be16d191db2be016e89843b9242480f8cfab607"
+    }
+  },
+  "parameter_id": "v1_4_hpu_879_ks32_tuniform_2m128"
+}

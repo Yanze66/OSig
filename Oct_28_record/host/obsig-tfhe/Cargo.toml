@@ -1,0 +1,21 @@
+[package]
+name = "obsig-tfhe"
+default-run = "obsig-tfhe"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+tfhe = { version = "=1.8.1", features = ["pbs-stats", "shortint", "integer", "hpu"] }
+tfhe-hpu-backend = "=0.7.0"
+toml = "0.8"
+rand = "0.10.0-rc.0"
+chrono = "0.4"
+bincode = "1"
+serde = { version = "1.0.228", features = ["derive"] }
+rayon = "1.11.0"
+sha2 = "0.10"
+hex = "0.4"
+clap = { version = "4.0", features = ["derive"] }
+
+[profile.release]
+lto = "fat"

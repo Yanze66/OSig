@@ -1,0 +1,82 @@
+[
+  {
+    "case": "msgonly_0",
+    "expected_plain": 0,
+    "gid": 1,
+    "input_file": "msgonly_in_0.bin",
+    "lut": "MsgOnly",
+    "raw_value": 0
+  },
+  {
+    "case": "msgonly_1",
+    "expected_plain": 1,
+    "gid": 1,
+    "input_file": "msgonly_in_1.bin",
+    "lut": "MsgOnly",
+    "raw_value": 1
+  },
+  {
+    "case": "msgonly_2",
+    "expected_plain": 2,
+    "gid": 1,
+    "input_file": "msgonly_in_2.bin",
+    "lut": "MsgOnly",
+    "raw_value": 2
+  },
+  {
+    "case": "msgonly_3",
+    "expected_plain": 3,
+    "gid": 1,
+    "input_file": "msgonly_in_3.bin",
+    "lut": "MsgOnly",
+    "raw_value": 3
+  },
+  {
+    "case": "msgonly_4",
+    "expected_plain": 1,
+    "gid": 1,
+    "input_file": "msgonly_in_4.bin",
+    "lut": "MsgOnly",
+    "raw_value": 5
+  },
+  {
+    "case": "msgonly_5",
+    "expected_plain": 3,
+    "gid": 1,
+    "input_file": "msgonly_in_5.bin",
+    "lut": "MsgOnly",
+    "raw_value": 7
+  },
+  {
+    "case": "msgonly_6",
+    "expected_plain": 1,
+    "gid": 1,
+    "input_file": "msgonly_in_6.bin",
+    "lut": "MsgOnly",
+    "raw_value": 9
+  },
+  {
+    "case": "msgonly_7",
+    "expected_plain": 3,
+    "gid": 1,
+    "input_file": "msgonly_in_7.bin",
+    "lut": "MsgOnly",
+    "raw_value": 11
+  },
+  {
+    "case": "msgonly_8",
+    "expected_plain": 1,
+    "gid": 1,
+    "input_file": "msgonly_in_8.bin",
+    "lut": "MsgOnly",
+    "raw_value": 13
+  },
+  {
+    "case": "msgonly_9",
+    "expected_plain": 3,
+    "gid": 1,
+    "input_file": "msgonly_in_9.bin",
+    "lut": "MsgOnly",
+    "raw_value": 15
+  }
+]

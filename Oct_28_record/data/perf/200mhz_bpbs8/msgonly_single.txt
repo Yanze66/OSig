@@ -1,0 +1,11 @@
+case 0: hw_cycles=1331548 round_trip_us=6935
+case 1: hw_cycles=1317042 round_trip_us=6854
+case 2: hw_cycles=1339314 round_trip_us=6966
+case 3: hw_cycles=1337459 round_trip_us=6955
+case 4: hw_cycles=1341666 round_trip_us=6978
+case 5: hw_cycles=1337560 round_trip_us=6955
+case 6: hw_cycles=1336517 round_trip_us=6955
+case 7: hw_cycles=1337779 round_trip_us=6957
+case 8: hw_cycles=1337472 round_trip_us=6955
+case 9: hw_cycles=1337481 round_trip_us=6954
+RUN_TESTVEC_DONE cases=10

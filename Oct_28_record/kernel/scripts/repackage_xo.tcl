@@ -1,0 +1,2 @@
+package_xo -force -xo_path /home/yzwu/.codex/visualizations/2026/09/25/01a0da75-f764-71d3-9aa4-62eb17f163fd/vck190_tcp_adder/osig_hpu/step2_pbs_core/build_kernel/hpu_mini.xo -kernel_name hpu_mini_krnl -ctrl_protocol user_managed -ip_directory /home/yzwu/.codex/visualizations/2026/09/25/01a0da75-f764-71d3-9aa4-62eb17f163fd/vck190_tcp_adder/osig_hpu/step2_pbs_core/build_kernel/packaged_ip -kernel_xml /home/yzwu/.codex/visualizations/2026/09/25/01a0da75-f764-71d3-9aa4-62eb17f163fd/vck190_tcp_adder/osig_hpu/step2_pbs_core/kernel/kernel.xml
+puts "XO_READY"
