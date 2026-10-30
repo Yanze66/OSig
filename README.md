@@ -110,43 +110,7 @@ b32 gains only 3% over b16 in OSig, from the 20-ciphertext filter requests
 60% of the Alg4 wall time, so host-side work (packing, accumulation, cmux,
 TCP queueing) is the larger share.
 
-### Revised Performance Model: Overlapped Key Streaming and NTT
 
-**These measurements supersede the earlier additive `t = c / f + m` model
-and the general key-bandwidth bottleneck interpretation in the Oct 27
-snapshot.** The updated model treats key streaming and computation as
-concurrent work. For one hardware batch containing `n` ciphertexts:
-
-```text
-T_batch ≈ max(T_key_stream, n × 113,500 / f_clock)
-```
-
-- **Key streaming:** At 200 MHz, a complete key stream takes approximately
-  6.6 ms (1.32M cycles): 57.6 MB of BSK plus 43 MB of KSK, corresponding
-  to roughly 15 GB/s. At 100 MHz it takes approximately 7.9 ms, limited
-  by four 256-bit AXI ports at 100 MHz. Each hardware batch reads the keys
-  once regardless of occupancy. Requests fitting within a batch with
-  at most eight ciphertexts remain near the key-stream floor at 200 MHz.
-- **NTT throughput:** Compute requires approximately 113.5k cycles per
-  ciphertext, consistent with the 113.9k cycles measured for depth 8 at
-  100 MHz. This is approximately `879 × 129` cycles. The NTT core processes
-  `R=2 × PSI=16 = 32` coefficients per cycle; two degree-2048 polynomial
-  vectors require `4096 / 32 = 128` cycles per LWE iteration, consistent
-  with the measured approximately 129-cycle iteration cost.
-- **Crossover:** At 200 MHz, `1.32M / 113.5k ≈ 11.6` ciphertexts. A batch
-  containing roughly 12 or more ciphertexts reaches the NTT throughput
-  limit. Fully occupied b16 already captures the available batching
-  benefit; b32 cannot improve throughput without more compute capacity.
-- **Why the earlier fit failed:** The 100 MHz depth-8 batch measurement
-  is compute-bound, while the 200 MHz depth-8 measurement is key-stream
-  bound. Fitting those different regimes with an additive model produced
-  the apparent 59k-cycle compute term plus 0.54 ms fixed term. The b32
-  results support the overlapping-work model instead.
-
-The implementation priority is now to improve NTT throughput for full b16
-batches and reduce host-side overhead. Further increasing batch depth alone
-does not improve the measured hardware throughput. Earlier dated results
-below remain historical snapshots; their superseded model is corrected here.
 
 ## Oct 27, 2026 — OSig Server: VCK190 vs. CPU
 
