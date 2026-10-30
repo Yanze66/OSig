@@ -95,14 +95,13 @@ Same workload and host as the Oct 27 comparison (ten recipients, CPU
 baseline 52.71 s). Two runs each; `--verify-io -r 4` passes 4/4
 `FINAL_INBOX_PASS` and `OSIG_HPU_CPU_VALIDATION_PASS` on both images.
 
-| Configuration | Alg4 wall time | Speedup vs. CPU | Total worker_s | 4.1 Rectification | 4.2 Pertinency | 4.3 Filter / accumulate | 4.4 Inbox update | Board cycles / ciphertext | Board busy / Alg4 wall |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 200 MHz depth 8 (Oct 27) | 22.21–22.52 s | 2.34–2.37× | 188.9–190.5 | 63.1–63.5 | 93.5–93.8 | 11.9–12.1 | 17.8–19.7 | 214.2k | 69% |
-| 200 MHz b16, run 1 | 15.88 s | 3.32× | 125.6 | 43.7 | 53.0 | 9.3 | 17.6 | 129.6k | 59% |
-| 200 MHz b16, run 2 | 16.01 s | 3.29× | 125.6 | 43.8 | 53.0 | 8.8 | 17.8 | 129.4k | 59% |
-| 200 MHz b32, run 1 | 15.76 s | 3.34× | 124.1 | 43.8 | 51.4 | 9.0 | 17.5 | 125.0k | 57% |
-| 200 MHz b32, run 2 | 15.74 s | 3.35× | 123.6 | 43.2 | 51.8 | 8.3 | 17.8 | 125.0k | 57% |
-| 200 MHz b32, server timeout 50 µs (pre-fix) | 16.18 s | 3.26× | — | 47.8 | 52.0 | 8.8 | 18.0 | 130.5k | — |
+| Configuration | Alg4 wall time (s) | Speedup vs. CPU | Total worker (s) | 4.1 Rectification | 4.2 Pertinency | 4.3 Filter / accumulate | 4.4 Inbox update | Board cycles / ciphertext | Board busy / Alg4 wall |
+| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+| 200 MHz depth 8    | 22.21–22.52  | 2.34–2.37× | 188.9–190.5 | 63.1–63.5 | 93.5–93.8 | 11.9–12.1 | 17.8–19.7 | 214.2k | 69% |
+| 200 MHz b16, run 1 | 15.88  | 3.32× | 125.6 | 43.7 | 53.0 | 9.3 | 17.6 | 129.6k | 59% |
+| 200 MHz b16, run 2 | 16.01  | 3.29× | 125.6 | 43.8 | 53.0 | 8.8 | 17.8 | 129.4k | 59% |
+| 200 MHz b32, run 1 | 15.76  | 3.34× | 124.1 | 43.8 | 51.4 | 9.0 | 17.5 | 125.0k | 57% |
+| 200 MHz b32, run 2 | 15.74  | 3.35× | 123.6 | 43.2 | 51.8 | 8.3 | 17.8 | 125.0k | 57% |
 
 The pertinency AND chain benefits most: each round submits ten ciphertexts
 per recipient, which depth 8 split into 8 + 2 batches and b16/b32 run as one.
