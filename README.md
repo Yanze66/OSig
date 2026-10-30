@@ -87,19 +87,7 @@ with approximately 3.61M cycles for two b16 batches. From request sizes 16
 through 32, b32 stays near 113.5k cycles per ciphertext. The increase to 77%
 BRAM therefore brings no measured throughput improvement over b16.
 
-**Server pitfall found while measuring b32.** The first b32 measurements
-showed a constant 4.03M cycles for every request of 28–32 ciphertexts
-(126k–144k cycles per ciphertext, worse than b16). The cause was in
-`hpu_server`, not in the hardware: the board server pushes DOps one by one
-through XRT register writes (about 2 µs each), so 32 PBS DOps take more than
-60 µs, while the sequencer's `BPIP_TIMEOUT` was set to 10,000 cycles (50 µs).
-The sequencer therefore launched a first batch of about 24 ciphertexts on
-timeout and a second batch of about 8 on the flush bit (2.72M + 1.33M ≈ 4.05M).
-b16 was unaffected because 16 DOps fit within 50 µs. The server now sets
-`BPIP_TIMEOUT` to 1,000,000 cycles (5 ms; every request ends with a flush, so
-the timeout is only a safety net) and gained command 10 `REG_WRITE` for the two
-batching registers. The b32 table above was measured with the fixed server;
-the pre-fix data is kept in `Oct_28_record/data/perf/200mhz_b32/old_timeout10k/`.
+
 
 ### OSig Server (Alg4) with b16 and b32
 
